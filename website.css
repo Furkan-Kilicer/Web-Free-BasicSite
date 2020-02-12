@@ -1,0 +1,465 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+
+body {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-family: 'Noto Serif';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-social {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.btn-outline {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    color: #212529;
+    background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #18BC9C;
+    border-color: #18BC9C;
+    color: #fff;
+    padding: 1.2rem 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #128f76;
+    border-color: #128f76;
+}
+
+.btn-large {
+    font-size: 2rem;
+    padding: 2.2rem 1.6rem;
+}
+
+.btn {
+    font-size: 2rem;
+    padding: 2.8rem 1.6rem;
+    font-weight: 400;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn:hover {
+    color: #212529;
+    background-color: white;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+
+}
+
+/*navbar Kısmı*/
+
+nav {
+    width: 100%;
+    font-family: 'Indie Flower', cursive;
+    background-image: linear-gradient(gray, black);
+    color: white;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    position: fixed;
+    z-index: 1;
+
+
+}
+
+#logo-box {
+    float: left;
+    padding-top: .5rem;
+}
+
+#logo-box .logo {
+    color: white;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin: 4px !important;
+    padding: 4px !important;
+}
+
+#nav-links {
+    float: right;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: .4rem;
+}
+
+#nav-links .nav-link {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.6rem;
+    display: block;
+    letter-spacing: .2rem;
+}
+
+#nav-links .nav-link:hover {
+    color: #18bc9c;
+}
+
+/*Header Kısmı*/
+
+header {
+    background-color: #18BC9C;
+
+    padding-top: calc(112px + 10rem);
+    padding-bottom: 112px;
+    text-align: center;
+
+}
+
+header h1 {
+    color: white;
+    font-size: 7.6rem;
+}
+
+.star-light {
+    border: none;
+    border-top: .4rem solid white;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+}
+
+.far {
+    color: white;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -43px;
+    background-color: #18BC9C;
+    padding: 0 10px;
+
+}
+
+header h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Noto Serif';
+    font-weight: 300;
+    margin: 20px;
+}
+
+/*PortFolio*/
+
+#portfolio {
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+}
+
+.text {
+    text-align: center;
+    font-family: 'Noto Serif';
+    color: #2C3E50;
+    font-size: 4.2rem;
+
+}
+
+.star-dark {
+    border: none;
+    border-top: .4rem solid #2C3E50;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+}
+
+.star-dark::after {
+    color: #2C3E50;
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    padding: 0 8px;
+    top: -26px;
+    right: -95px;
+    background-color: white;
+}
+
+.col {
+    float: left;
+    width: 33.3333%;
+    padding: 10px;
+
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item img {
+    display: block;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #18BC9C;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.img-overlay .icon {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-item:hover .img-overlay {
+    opacity: 0.6;
+
+
+}
+
+/*About Kısmı*/
+
+#Green-bg {
+    background-color: #18BC9C;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+
+}
+
+.about {
+    text-align: center;
+    font-family: 'Noto Serif';
+    color: #fff;
+    font-size: 3.2rem;
+
+
+}
+
+.example {
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+    column-count: 2;
+    color: #fff;
+    padding: 2rem;
+    overflow: visible;
+
+    
+
+}
+
+.download {
+    margin-left: 26rem;
+}
+
+.download a {
+    color: black;
+
+}
+
+
+
+
+/*Contact Me Kısmı*/
+
+#contact {
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+}
+
+.contact-me {
+    text-align: center;
+    font-family: 'Noto Serif';
+    color: #2C3E50;
+    font-size: 4.2rem;
+}
+
+#form-contact {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#contact .form-group {
+    border: 1px solid #e9ecef;
+    padding: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+    opacity: 0.6;
+}
+
+.form-group input:focus {
+    outline: 0;
+}
+
+#contact .btn {
+    background-color: #18BC9C;
+    text-align: center;
+    padding: 2rem;
+}
+
+#contact .btn:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+footer {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 2.4rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+footer p {
+    font-size: 2rem;
+    color: beige;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 1rem;
+
+}
+
+footer .btn {
+    margin-top: 4rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.copyright {
+    font-family: 'Shadows Into Light', cursive;
+    
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(gray, black);
+    height: 7rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+category {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 648px;
+
+
+}
+
+
+.xd {
+    position: relative;
+    top: 20px;
+    left: -25px;
+}
+
+
+/*Media Responsive Kısmı*/
+
+@media screen and (max-width:400px){
+    header h2{
+        
+    }
+}
